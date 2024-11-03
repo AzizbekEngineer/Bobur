@@ -7,15 +7,15 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav container">
-        <div className="header__nav__logo">
+        <NavLink to={"/"} className="header__nav__logo">
           <img src={rasm} alt="Logo" />
           <h2>
             Bobur <br /> Korpus
           </h2>
-        </div>
+        </NavLink>
         <ul className="header__nav__list">
           <li className="header__nav__item">
-            <NavLink to={"home"}>Bosh Sahifa</NavLink>
+            <NavLink to={"/"}>Bosh Sahifa</NavLink>
           </li>
           <li className="header__nav__item">
             <NavLink to={"/about"}>Muallif haqida</NavLink>
