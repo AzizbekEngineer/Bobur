@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__box container">
-        <div className="hero__box-imgs"></div>
         <div className="hero__info">
           <h2>Zahiriddin Muhammad Bobur ibn Umarshayx Mirzo</h2>
           <span>
@@ -22,6 +21,7 @@ const Hero = () => {
             </h3>
           </span>
         </div>
+        <div className="hero__box-imgs"></div>
       </div>
     </div>
   );
