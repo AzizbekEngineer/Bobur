@@ -1,0 +1,70 @@
+.contact {
+    padding: 15px 0;
+    background: url(../../assets/contact.jpg)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    &__title {
+        text-align: center;
+        color: white;
+    }
+
+    &__form {
+        padding: 30px;
+        width: 600px;
+        height: 400px;
+        background: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid white;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: flex-start;
+            color: black;
+            font-size: 16px;
+
+            input {
+                width: 100%;
+                padding: 10px 15px;
+                border-radius: 2px;
+                border: 1px solid black;
+                outline: none;
+                font-size: 16px;
+                background: white;
+            }
+
+            textarea {
+                width: 100%;
+                min-height: 80px;
+                outline: none;
+                padding: 10px 15px;
+                border-radius: 2px;
+                border: 1px solid black;
+                font-size: 16px;
+                background: white;
+            }
+
+        }
+
+        button {
+            padding: 15px;
+            background: white;
+            color: black;
+            border-radius: 2px;
+            border: 1px solid black;
+            outline: none;
+        }
+    }
+}

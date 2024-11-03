@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #aaa5;
+  backdrop-filter: blur(1px);
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  &__nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+    }
+    h2 {
+      color: white;
+    }
+  }
+
+  &__nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__nav__item {
+    color: white;
+    font-size: 18px;
+    width: 150px;
+  }
+
+  .active {
+    color: blue;
+  }
+
+  &__nav__item:hover {
+    font-size: 19px;
+    transition: 0.9s;
+  }
+}
