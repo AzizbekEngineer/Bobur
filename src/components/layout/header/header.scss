@@ -39,15 +39,9 @@
   &__nav__item {
     color: white;
     font-size: 18px;
-    width: 150px;
   }
 
   .active {
     color: blue;
-  }
-
-  &__nav__item:hover {
-    font-size: 19px;
-    transition: 0.9s;
   }
 }
