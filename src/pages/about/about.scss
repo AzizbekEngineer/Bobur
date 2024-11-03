@@ -13,29 +13,30 @@
 
     p {
         line-height: 28px;
-        // padding: 8px 0;
         font-size: 18px;
     }
 
     &__box {
         padding: 20px 0 10px;
         display: grid;
+        gap: 20px;
         grid-template-columns: 4fr 2fr;
         align-items: flex-start;
 
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
     &__list {
         display: flex;
-        gap: 80px;
+        gap: 40px;
 
     }
 
     &__list__back {
-        margin: 10px 0;
+        margin: 15px 0;
         width: 480px;
         background: rgba(255, 255, 255, 0.171);
         padding: 15px;
