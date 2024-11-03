@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import about1 from "../../assets/images/about1.jpg";
 import "./about.scss";
 
 const About = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <div className="about">
       <div className="container">

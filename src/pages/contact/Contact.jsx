@@ -6,17 +6,18 @@ const Contact = () => {
     <div className="contact">
       <div className="container">
         <form className="contact__form">
+          <h2>Biz Bilan Aloqa</h2>
           <label htmlFor="">
-            Phone
-            <input type="text" />
+            Username
+            <input placeholder="Username" type="text" />
           </label>
           <label htmlFor="">
             Email
-            <input type="text" />
+            <input placeholder="Email" type="text" />
           </label>
           <label htmlFor="">
             Description
-            <textarea name="" id=""></textarea>
+            <textarea placeholder="Description" name="" id=""></textarea>
           </label>
           <button>Send to</button>
         </form>
