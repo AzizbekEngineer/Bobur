@@ -1,0 +1,38 @@
+.global {
+  background-image: url(../../assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  &__left {
+    padding-top: 100px;
+    img {
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+    }
+  }
+
+  &__right {
+    &__title {
+      padding-top: 20px;
+    }
+    h2 {
+      font-size: 30px;
+      color: aliceblue;
+      padding: 10px 0px;
+    }
+
+    p {
+      font-size: 18px;
+      color: aliceblue;
+      line-height: 26px;
+    }
+  }
+}
