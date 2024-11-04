@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import about1 from "../../assets/images/about1.jpg";
+import about2 from "../../assets/images/about2.webp";
 import "./about.scss";
 
 const About = () => {
@@ -139,6 +140,22 @@ const About = () => {
             Devoni tarkibida umumiy hajmi 270 baytdan iborat 8 masnaviy ham
             oʻrin olgan.
           </p>
+        </div>
+        <div className="about__bottom">
+          <p>
+            <b>Bobur ijodi</b> <br /> Bobur o‘zbek tarixida tom ma’noda yirik
+            shaxs. Uning tarixchi olim, zukko adib va dilbar shoir sifatida
+            qoldirgan adabiy merosi bebahodir. Bobur hukmdorlik
+            majburiyatlaridan ortib yirik asarlar yozishga muvaffaq bo‘lgan.
+            Uning lirikasi adabiyotdagi o‘ziga xos lirika. Shubhasiz,
+            she’riyatining asosiy mavzuyi Vatan, Vatan sog‘inchi bo‘lgan. Taxt
+            uchun qondosh aka-ukalarning dushman bo‘lib kurashishi, atrofdagi
+            insonlarning xiyonati, vatanini birlashtirolmaganidan so‘ng tortgan
+            azoblari va nihoyat umrining so‘nggigacha Vatan sog‘inchi uning
+            she’riyatiga ko‘chgan desak mubolag‘a bo‘lmaydi. Bu mavzular Bobur
+            g‘azallari, ruboiylarida keng yoritilgan.
+          </p>
+          <img src={about2} alt="" />
         </div>
       </div>
     </div>
