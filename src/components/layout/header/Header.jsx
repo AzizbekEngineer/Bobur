@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.scss";
 import rasm from "../../../assets/images/logo.jfif";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
   return (
     <header className="header">
       <nav className="header__nav container">
@@ -13,7 +16,10 @@ const Header = () => {
             Bobur <br /> Korpus
           </h2>
         </NavLink>
-        <ul className="header__nav__list">
+        <ul className={`header__nav__list ${show ? "header__show" : ""}`}>
+          <button onClick={() => setShow(false)} className="header__nav__close">
+            <IoCloseSharp />
+          </button>
           <li className="header__nav__item">
             <NavLink to={"/"}>Bosh Sahifa</NavLink>
           </li>
@@ -30,6 +36,9 @@ const Header = () => {
             <NavLink to={"/contact"}>Biz bilan Aloqa</NavLink>
           </li>
         </ul>
+        <button onClick={() => setShow(true)} className="header__nav__btn">
+          <RxHamburgerMenu />
+        </button>
       </nav>
     </header>
   );

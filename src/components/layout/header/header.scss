@@ -36,6 +36,16 @@
     gap: 30px;
   }
 
+  &__nav__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    display: none;
+  }
+
   &__nav__item {
     color: white;
     font-size: 18px;
@@ -44,5 +54,44 @@
   .active {
     color: orange;
     font-weight: bold;
+  }
+
+  &__nav__btn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    display: none;
+    color: white;
+  }
+
+  @media (max-width: 1050px) {
+    &__nav__list {
+      gap: 15px;
+    }
+  }
+  @media (max-width: 975px) {
+    &__nav__list {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100vh;
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: 0.7s;
+    }
+
+    &__nav__btn {
+      display: block;
+    }
+
+    &__show {
+      left: 0;
+    }
+    &__nav__close {
+      display: block;
+    }
   }
 }
