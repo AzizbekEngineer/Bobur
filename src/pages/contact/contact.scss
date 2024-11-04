@@ -74,4 +74,24 @@
       outline: none;
     }
   }
+
+  @media (max-width:620px) {
+    &__form {
+      padding: 30px;
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width:450px) {
+    h2 {
+      font-size: 22px;
+    }
+
+    &__form {
+      padding: 30px;
+      width: 90%;
+      height: 400px;
+    }
+  }
 }

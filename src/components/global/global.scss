@@ -2,7 +2,7 @@
   background-image: url(../../assets/images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+
   &__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -12,6 +12,7 @@
 
   &__left {
     padding-top: 100px;
+
     img {
       width: 600px;
       height: 100%;
@@ -24,6 +25,7 @@
     &__title {
       padding-top: 20px;
     }
+
     h2 {
       font-size: 30px;
       color: aliceblue;
@@ -51,6 +53,7 @@
       h2 {
         font-size: 24px;
       }
+
       p {
         font-size: 14px;
         line-height: 20px;
