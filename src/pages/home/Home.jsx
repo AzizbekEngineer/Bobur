@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
-// import Video from "../../components/vidio/Video";
+import Video from "../../components/vidio/Video";
 // import Global from "../../components/global/Global";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      {/* <Global />
-      <Video /> */}
+      {/* <Global />*/}
+      <Video />
     </div>
   );
 };

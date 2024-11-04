@@ -21,7 +21,6 @@ const Hero = () => {
             </h3>
           </span>
         </div>
-        <div className="hero__box-imgs"></div>
       </div>
     </div>
   );

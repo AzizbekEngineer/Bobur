@@ -17,6 +17,7 @@
 .overlay-content {
   position: relative;
   z-index: 1;
+
   h1 {
     text-align: center;
     font-size: 42px;
@@ -30,5 +31,32 @@
     color: aliceblue;
     line-height: 30px;
     text-align: center;
+  }
+}
+
+@media (max-width:600px) {
+  .overlay-content {
+
+    h1 {
+      font-size: 34px;
+      padding-top: 120px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width:470px) {
+  .overlay-content {
+
+    h1 {
+      font-size: 28px;
+      padding-top: 100px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

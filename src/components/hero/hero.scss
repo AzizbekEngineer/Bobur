@@ -1,14 +1,15 @@
 .hero {
-  background-image: url(../../assets/images/hero3.jpg);
+  background: url(../../assets/images/hero3.jpg)no-repeat left / cover;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   display: grid;
+
   &__box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
+
     &-imgs {
       img {
         width: 100%;
@@ -23,16 +24,64 @@
       color: bisque;
       padding-bottom: 20px;
     }
+
     span {
       color: antiquewhite;
       font-size: 16px;
       line-height: 26px;
       padding: 20px 0px;
+
       h3 {
         padding-top: 20px;
         color: rgb(241, 241, 180);
         font-size: 22px;
         line-height: 30px;
+      }
+    }
+  }
+
+  @media (max-width:1250px) {
+    &__box {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+
+  @media (max-width:805px) {
+    background-position: left;
+
+    &__info {
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        line-height: 22px;
+
+        h3 {
+          padding-top: 20px;
+          color: rgb(241, 241, 180);
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width:500px) {
+    &__info {
+      h2 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      span {
+        h3 {
+          padding-top: 20px;
+          color: rgb(241, 241, 180);
+          font-size: 17px;
+          line-height: 20px;
+        }
       }
     }
   }
